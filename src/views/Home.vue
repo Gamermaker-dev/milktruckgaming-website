@@ -2,7 +2,7 @@
   <div class="home">
     <HelloWorld msg="Welcome to Your Vue.js App" />
     <iframe
-      src="https://player.twitch.tv/?channel=MilkTruckGaming&parent=localhost&muted=true&autoplay=true"
+      src="https://player.twitch.tv/?channel=MilkTruckGaming&parent=milktruckgaming.com&muted=true&autoplay=true"
       height="600"
       width="800"
       allowfullscreen="true">
