@@ -1,22 +1,16 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Buefy from 'buefy'
+import Vue from "vue";
+import ElementUI from "element-ui";
+import App from "./App.vue";
+import "./registerServiceWorker";
+import router from "./router";
+import "./css/custom-element-ui.css";
+import "./css/custom-bootstrap.css";
 
-// Pages
-import Home from './pages/Home.vue'
 
-Vue.config.productionTip = false
-Vue.use(VueRouter)
-Vue.use(Buefy)
-
-const routes = [
-    {path: '/', component: Home}
-]
-
-const router = new VueRouter({
-    routes
-})
+Vue.config.productionTip = false;
+Vue.use(ElementUI);
 
 new Vue({
-  router
-}).$mount('#app')
+  router,
+  render: (h) => h(App),
+}).$mount("#app");
